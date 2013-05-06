@@ -2,7 +2,7 @@
 # Cookbook Name:: win-dhcp
 # Recipe:: default
 #
-# Copyright 2013, Texas A&M
+# Copyright 2013, Jim Rosser 
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
@@ -23,3 +23,11 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
+
+windows_feature "DHCPServer" do
+  action :install
+end
+
+service "dhcpserver" do
+  action [:enable, :start]
+end
