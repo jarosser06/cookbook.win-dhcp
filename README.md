@@ -1,17 +1,16 @@
 win-dhcp Cookbook
 =================
-TODO: Enter the cookbook description here.
+This cookbook is meant to be used to manage the dhcp service on Windows servers 2008 and 2012.
 
-e.g.
-This cookbook makes your favorite breakfast sandwhich.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+This cookbook has only been tested with Windows Server 2008 Standard and Windows Server 2012 Standard.
 
-e.g.
-#### packages
-- `toaster` - win-dhcp needs toaster to brown your bagel.
+#### cookbooks 
+- `windows` 
+- `powershell`
+- `chef-handler`
 
 Attributes
 ----------
