@@ -1,4 +1,4 @@
-actions :enable, :disable
+actions :enable, :deactivate, :delete
 
 default_action :enable
 
